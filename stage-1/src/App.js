@@ -52,7 +52,8 @@ class App extends Component {
     const { products, showCart } = this.state;
     return (
       <div className="App">
-        <NavBar navigate={this.navigate} />
+        <NavBar navigate={this.navigate} 
+                products={this.state.products}/>
         <div className="main-container">
           {showCart ? (
             <ShoppingCart cart={this.state.cart} 
